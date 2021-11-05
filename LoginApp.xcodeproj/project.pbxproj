@@ -10,6 +10,7 @@
 		04A05102272FE7A400FCD02D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A05101272FE7A400FCD02D /* HomeViewController.swift */; };
 		04A0510627328AF400FCD02D /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0510527328AF400FCD02D /* ProductListViewController.swift */; };
 		04A051082732923400FCD02D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051072732923400FCD02D /* ProductTableViewCell.swift */; };
+		04A0514A2733DC8400FCD02D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051492733DC8400FCD02D /* Product.swift */; };
 		04CF84CC272C14D2005A69D7 /* LoginVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF84CB272C14D2005A69D7 /* LoginVeiwController.swift */; };
 		04CF84CE272C15AF005A69D7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF84CD272C15AF005A69D7 /* SettingViewController.swift */; };
 		04F39FF4272BF261001F03CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F39FF3272BF261001F03CC /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 		04A05101272FE7A400FCD02D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04A0510527328AF400FCD02D /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		04A051072732923400FCD02D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		04A051492733DC8400FCD02D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		04CF84CB272C14D2005A69D7 /* LoginVeiwController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVeiwController.swift; sourceTree = "<group>"; };
 		04CF84CD272C15AF005A69D7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		04F39FF0272BF261001F03CC /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A0514D273407B600FCD02D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A051492733DC8400FCD02D /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A0514E273407CB00FCD02D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04A0510527328AF400FCD02D /* ProductListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04F39FE7272BF261001F03CC = {
 			isa = PBXGroup;
 			children = (
@@ -109,13 +127,14 @@
 		04F39FF2272BF261001F03CC /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				04A0514E273407CB00FCD02D /* Controller */,
+				04A0514D273407B600FCD02D /* Model */,
 				04F39FF3272BF261001F03CC /* AppDelegate.swift */,
 				04F39FF5272BF261001F03CC /* SceneDelegate.swift */,
 				04A05101272FE7A400FCD02D /* HomeViewController.swift */,
 				04F39FF7272BF261001F03CC /* ViewController.swift */,
 				04CF84CB272C14D2005A69D7 /* LoginVeiwController.swift */,
 				04CF84CD272C15AF005A69D7 /* SettingViewController.swift */,
-				04A0510527328AF400FCD02D /* ProductListViewController.swift */,
 				04A051072732923400FCD02D /* ProductTableViewCell.swift */,
 				04F39FF9272BF261001F03CC /* Main.storyboard */,
 				04F39FFC272BF264001F03CC /* Assets.xcassets */,
@@ -275,6 +294,7 @@
 			files = (
 				04CF84CE272C15AF005A69D7 /* SettingViewController.swift in Sources */,
 				04A051082732923400FCD02D /* ProductTableViewCell.swift in Sources */,
+				04A0514A2733DC8400FCD02D /* Product.swift in Sources */,
 				04CF84CC272C14D2005A69D7 /* LoginVeiwController.swift in Sources */,
 				04A0510627328AF400FCD02D /* ProductListViewController.swift in Sources */,
 				04F39FF8272BF261001F03CC /* ViewController.swift in Sources */,

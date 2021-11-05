@@ -33,7 +33,25 @@
 // ViewController Life cycle
 // Assignment.
 
+// CAT7
 
+// Integrating data from array of Models in tableview
+//  Vertical and Horizontal stack views.
+//   passing data from one controller to other controller
+//  Introduction to MVC architecture
+//  Introduction REST API Calls - webservics
+
+// MVC
+// MVVM
+// MVVMC
+// MVP
+// VIPER
+// RIBs
+
+
+// M - Modal - > structs
+// V - View    -> UIView
+// C - Controller -> UIViewController
 
 
 import UIKit

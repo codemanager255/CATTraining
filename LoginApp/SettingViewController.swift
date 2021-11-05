@@ -9,6 +9,9 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    
+    var product:Product?
+    
     let employes = ["Kiran", "Mahesh", "David", "Suman", "Geethanjali"]
     
     @IBOutlet weak var tableView: UITableView!
