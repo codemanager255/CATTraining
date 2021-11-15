@@ -14,7 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        print("didFinishLaunchingWithOptions")
+
+        let networkManager = NetworkManager.shared
+
+        networkManager.addvalue()
+        networkManager.showToken()
+
+        let networkManager1 = NetworkManager.shared
+
+
+        networkManager1.showToken()
         return true
     }
 

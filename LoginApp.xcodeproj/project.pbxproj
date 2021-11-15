@@ -11,6 +11,11 @@
 		04A0510627328AF400FCD02D /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0510527328AF400FCD02D /* ProductListViewController.swift */; };
 		04A051082732923400FCD02D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051072732923400FCD02D /* ProductTableViewCell.swift */; };
 		04A0514A2733DC8400FCD02D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A051492733DC8400FCD02D /* Product.swift */; };
+		04A89716274268CB0068CBD0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A89715274268CB0068CBD0 /* NetworkManager.swift */; };
+		04A8971827426D010068CBD0 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8971727426D010068CBD0 /* Calculator.swift */; };
+		04A8971A27426DC10068CBD0 /* CaculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8971927426DC10068CBD0 /* CaculatorTests.swift */; };
+		04A8971C274275110068CBD0 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8971B274275110068CBD0 /* LoginViewControllerTests.swift */; };
+		04A8972027427F1D0068CBD0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8971F27427F1D0068CBD0 /* LoginPresenter.swift */; };
 		04CF84CC272C14D2005A69D7 /* LoginVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF84CB272C14D2005A69D7 /* LoginVeiwController.swift */; };
 		04CF84CE272C15AF005A69D7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF84CD272C15AF005A69D7 /* SettingViewController.swift */; };
 		04F39FF4272BF261001F03CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F39FF3272BF261001F03CC /* AppDelegate.swift */; };
@@ -45,6 +50,11 @@
 		04A0510527328AF400FCD02D /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		04A051072732923400FCD02D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		04A051492733DC8400FCD02D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		04A89715274268CB0068CBD0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04A8971727426D010068CBD0 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		04A8971927426DC10068CBD0 /* CaculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatorTests.swift; sourceTree = "<group>"; };
+		04A8971B274275110068CBD0 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		04A8971F27427F1D0068CBD0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		04CF84CB272C14D2005A69D7 /* LoginVeiwController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVeiwController.swift; sourceTree = "<group>"; };
 		04CF84CD272C15AF005A69D7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		04F39FF0272BF261001F03CC /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,12 +106,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		04A0514E273407CB00FCD02D /* Controller */ = {
+		04A8971D27427EC60068CBD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04A0510527328AF400FCD02D /* ProductListViewController.swift */,
+				04CF84CB272C14D2005A69D7 /* LoginVeiwController.swift */,
 			);
-			path = Controller;
+			path = View;
+			sourceTree = "<group>";
+		};
+		04A8971E27427ED60068CBD0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04A8971F27427F1D0068CBD0 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		04F39FE7272BF261001F03CC = {
@@ -127,19 +145,22 @@
 		04F39FF2272BF261001F03CC /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				04A0514E273407CB00FCD02D /* Controller */,
+				04A8971E27427ED60068CBD0 /* Presenter */,
+				04A8971D27427EC60068CBD0 /* View */,
 				04A0514D273407B600FCD02D /* Model */,
 				04F39FF3272BF261001F03CC /* AppDelegate.swift */,
+				04A0510527328AF400FCD02D /* ProductListViewController.swift */,
 				04F39FF5272BF261001F03CC /* SceneDelegate.swift */,
 				04A05101272FE7A400FCD02D /* HomeViewController.swift */,
 				04F39FF7272BF261001F03CC /* ViewController.swift */,
-				04CF84CB272C14D2005A69D7 /* LoginVeiwController.swift */,
 				04CF84CD272C15AF005A69D7 /* SettingViewController.swift */,
 				04A051072732923400FCD02D /* ProductTableViewCell.swift */,
 				04F39FF9272BF261001F03CC /* Main.storyboard */,
 				04F39FFC272BF264001F03CC /* Assets.xcassets */,
 				04F39FFE272BF264001F03CC /* LaunchScreen.storyboard */,
 				04F3A001272BF264001F03CC /* Info.plist */,
+				04A89715274268CB0068CBD0 /* NetworkManager.swift */,
+				04A8971727426D010068CBD0 /* Calculator.swift */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -148,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				04F3A00A272BF264001F03CC /* LoginAppTests.swift */,
+				04A8971B274275110068CBD0 /* LoginViewControllerTests.swift */,
+				04A8971927426DC10068CBD0 /* CaculatorTests.swift */,
 				04F3A00C272BF264001F03CC /* Info.plist */,
 			);
 			path = LoginAppTests;
@@ -292,8 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A8972027427F1D0068CBD0 /* LoginPresenter.swift in Sources */,
 				04CF84CE272C15AF005A69D7 /* SettingViewController.swift in Sources */,
 				04A051082732923400FCD02D /* ProductTableViewCell.swift in Sources */,
+				04A89716274268CB0068CBD0 /* NetworkManager.swift in Sources */,
+				04A8971827426D010068CBD0 /* Calculator.swift in Sources */,
 				04A0514A2733DC8400FCD02D /* Product.swift in Sources */,
 				04CF84CC272C14D2005A69D7 /* LoginVeiwController.swift in Sources */,
 				04A0510627328AF400FCD02D /* ProductListViewController.swift in Sources */,
@@ -308,6 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A8971C274275110068CBD0 /* LoginViewControllerTests.swift in Sources */,
+				04A8971A27426DC10068CBD0 /* CaculatorTests.swift in Sources */,
 				04F3A00B272BF264001F03CC /* LoginAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
